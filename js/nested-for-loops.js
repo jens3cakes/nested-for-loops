@@ -6,10 +6,14 @@
  */
 function nestedForLoops (depth, width = depth) {
   let result = "\n";
-
-  // Write code here
-
+  for (let i= 0;i<depth;i++){
+    for(var j=0; j<width;j++){
+     result += '{x:' +[j] + ', y:' + [i]+'}, ' 
+    }
+    result += '\n';
+  }
+  return result;
 };
 
 // To see your console output outside the tests add function calls here.
-// console.log(nestedForLoops(4));
+//console.log(nestedForLoops(4));
